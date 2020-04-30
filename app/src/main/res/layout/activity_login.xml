@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@color/colorAccent"
-    tools:context=".LoginActivity">
+    tools:context=".ui.LoginActivity">
 
     <TextView
         android:id="@+id/lbl_title"
@@ -73,6 +73,7 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="20dp"
         android:text="@string/action_sign_in_short"
+        android:onClick="onSignIn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwd" />
 
@@ -83,7 +84,17 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="88dp"
         android:text="@string/register"
+        android:onClick="onRegister"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_ggl_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwd" />
 
     <TextView

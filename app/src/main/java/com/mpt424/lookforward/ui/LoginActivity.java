@@ -42,8 +42,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //askPermissions();
-        in_user = (TextInputEditText)(findViewById(R.id.in_user));
-        in_pwd = (TextInputEditText)(findViewById(R.id.in_pwd));
+        in_user = findViewById(R.id.in_user);
+        in_pwd = findViewById(R.id.in_pwd);
 
         // Initialize Firebase Auth
         // Configure sign-in to request the user's ID, email address, and basic

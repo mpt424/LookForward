@@ -1,0 +1,2 @@
+rootProject.name='LookForward'
+include ':app'
